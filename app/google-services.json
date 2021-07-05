@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "720387310101",
+    "firebase_url": "https://meritz-1370.firebaseio.com",
+    "project_id": "meritz-1370",
+    "storage_bucket": "meritz-1370.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720387310101:android:573b52de26d12477",
+        "android_client_info": {
+          "package_name": "com.rowem.oneshotpaddemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720387310101-b7stgdlhgeb0r31lvc7qk9f6ih1tn86d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfI8Nmup-jED2AW7Et-OL0dTXJYzNJvZw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

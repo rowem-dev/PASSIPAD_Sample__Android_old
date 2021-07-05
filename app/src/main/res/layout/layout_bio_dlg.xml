@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f4f5" >
+
+    <!-- 타이틀바 -->
+
+    <RelativeLayout
+        android:id="@+id/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp" />
+
+    <!-- 서브 타이틀 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title_bar" >
+
+        <TextView
+            android:id="@+id/tv_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="36.7dp"
+            android:background="#0d4570"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:scrollbarDefaultDelayBeforeFade="1000"
+            android:text="OneShotPad 설정"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sc_label"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/rl_sub_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="36.7dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="생체정보를 사용 하여 인증을 진행합니다."
+                android:textColor="#333333"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 입력된 비번 창 -->
+
+    <!-- 키패드 영역 -->
+
+</RelativeLayout>

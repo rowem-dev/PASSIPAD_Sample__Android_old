@@ -1,0 +1,267 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rowem.oneshotpaddemo.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fa1212"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="고객번호" />
+
+            <EditText
+                android:id="@+id/et_cus_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:hint="고객번호 입력..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="고객 ID" />
+
+            <EditText
+                android:id="@+id/et_cus_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:hint="고객 ID 입력..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_auth_type_sel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="인증타입선택"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_req_sp_enc_key"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="SP 암호키 및 인증토큰 요청" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#12affa"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="인증서 번호" />
+
+            <EditText
+                android:id="@+id/et_cert_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="인증서 번호 입력..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="인증서 암호" />
+
+            <EditText
+                android:id="@+id/et_cert_pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="인증서 암호 입력..." />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_check_join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가입 확인" />
+
+            <Button
+                android:id="@+id/btn_proc_join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가입" />
+
+            <Button
+                android:id="@+id/btn_req_login_push"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="로그인" />
+
+            <Button
+                android:id="@+id/btn_req_cert_login_push"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이체" />
+
+            <Button
+                android:id="@+id/btn_req_change_pwd_push"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 변경" />
+
+
+            <Button
+                android:id="@+id/btn_req_join_bio_auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="생체인증가입" />
+
+            <Button
+                android:id="@+id/btn_req_bio_auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="생체인증" />
+
+            <Button
+                android:id="@+id/btn_bio_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="생체인증해지" />
+
+            <Button
+                android:id="@+id/btn_req_close_push"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="해지" />
+
+            <Button
+                android:id="@+id/btn_check_token"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="푸시 토큰 업데이트" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fafa12"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="추가 고객 ID" />
+
+                    <EditText
+                        android:id="@+id/et_add_cus_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:hint="추가 고객 ID 입력..." />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_add_cus_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="고객 ID 추가등록" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
