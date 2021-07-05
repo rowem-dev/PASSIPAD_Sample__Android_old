@@ -40,8 +40,7 @@ public class SpVerify {
     public void reqVerify(String base_url, String cus_id, String sign, String sign_text, String auth_token, final SpVerifyListener<SpVerifyResponse> l) {
         if (TextUtils.isEmpty(base_url)) {
 
-           base_url = "http://192.168.10.24:8080";
-//         base_url = "https://api.passipad.com";
+             base_url = "https://api.passipad.com";
         }
         String url = base_url + "/spin/spmng/verify";
 

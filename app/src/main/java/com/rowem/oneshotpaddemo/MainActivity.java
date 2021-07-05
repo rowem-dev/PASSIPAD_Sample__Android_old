@@ -49,8 +49,7 @@ public class MainActivity extends AppCompatActivity {
     private final String APP_ID = "android"; // 앱 아이디
 
 
-      private String mBaseUrl = "http://192.168.10.24:8080";
-//    private String mBaseUrl = "http://passipad.com";
+    private String mBaseUrl = "http://passipad.com";
 
 
 
@@ -60,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         MLog.PRINT_LOG = true;
         OneShotPadManager.getInstance().setBaseUrl(mBaseUrl);
-        OneShotPadManager.getInstance().setAppType("1");
+        OneShotPadManager.getInstance().setAppType("RP74224463");
 
         RSACryptor.getInstance().init(this);
 

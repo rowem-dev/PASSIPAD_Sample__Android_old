@@ -39,8 +39,8 @@ public class SpEncKey {
 
     public void reqSpEncKey(String base_url, String cus_no, String used_type, final SpEncKeyListener<SpEncKeyResponse> l) {
         if (TextUtils.isEmpty(base_url)) {
-            base_url = "http://192.168.10.24:8080";         //
-//            base_url = "http://api.passipad.com";         //
+
+            base_url = "http://api.passipad.com";
 
         }
         String url = base_url + "/spin/spmng/reqSpEncKey";
